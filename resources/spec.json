@@ -1,0 +1,22 @@
+{
+  "documentationUrl": "https://docs.faros.ai",
+  "connectionSpecification": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Exchange Rate Spec",
+    "type": "object",
+    "required": ["accessKey", "base"],
+    "additionalProperties": true,
+    "properties": {
+      "accessKey": {
+        "type": "string",
+        "description": "Your API Key. See <a href='https://apilayer.com/marketplace/exchangerates_data-api'>here</a> The key is case sensitive.",
+        "airbyte_secret": true
+      },
+      "base": {
+        "type": "string",
+        "description": "The currency you want to convert to",
+        "example": "EUR"
+      }
+    }
+  }
+}
